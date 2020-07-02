@@ -22,9 +22,8 @@ const AppRouter = () => (
         <Route path="/help">
           <HelpPage />
         </Route>
-        <Route path="/edit">
-          <EditExpencePage />
-        </Route>
+        <Route path="/edit/:id" component={EditExpencePage} />
+          
         <Route path="/" exact={true}>
           <ExpenceRoutePage />
         </Route>

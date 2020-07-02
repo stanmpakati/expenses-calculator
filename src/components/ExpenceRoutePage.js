@@ -1,7 +1,15 @@
 import React from "react";
+import ExpenseList from "./ExpenseList";
+import ExpenseListFilters from './ExpenseListFilter'
+
 
 function ExpenseRouterPage() {
-  return <h2>ExpenseRouterPage</h2>;
+  return (
+    <div>
+    <ExpenseListFilters />
+      <ExpenseList />
+    </div>
+  );
 }
 
 export default ExpenseRouterPage;
